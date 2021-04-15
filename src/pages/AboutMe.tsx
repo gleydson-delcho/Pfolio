@@ -1,10 +1,10 @@
 import React from 'react';
-import Main from './Home';
 
-const AboutMe: React.FC = (props) => {
+
+const AboutMe: React.FC = () => {
     return (        
         <div className="contentContainer">            
-            <Main>
+            
             <h1>Portfólio</h1>
             <div className="presents">       
         
@@ -39,7 +39,7 @@ const AboutMe: React.FC = (props) => {
 
                 </p>
             </div>
-            </Main>
+            
 
 
         </div>
