@@ -1,11 +1,11 @@
 import React from 'react';
 
-
-const AboutMe: React.FC = () => {
-    return (        
+const AcademyPage: React.FC = () => {
+    return (
+        
         <div className="contentContainer">            
             
-            <h1>Portfólio</h1>
+            <h1>Saiba mais</h1>
             <div className="presents">       
         
                 <h2>Apresentação</h2>
@@ -39,11 +39,9 @@ const AboutMe: React.FC = () => {
 
                 </p>
             </div>
-            
-
-
         </div>
+        
     )
-};
+}
 
-export default AboutMe;
+export default AcademyPage;

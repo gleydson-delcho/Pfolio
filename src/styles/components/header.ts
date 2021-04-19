@@ -5,11 +5,14 @@ export const HeaderContainer = styled.div`
           
     
     background: #1C03A8;   
-    
+    min-width: 25rem;
+
     .headerContainer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        align-content: flex-end;
     }
     
     .header {
@@ -67,7 +70,7 @@ export const HeaderContainer = styled.div`
         text-align: justify;
         margin: 1rem;
     }
-
+    
     .link {
         display: flex;
         align-items center;

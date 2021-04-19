@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 </div>
                 
             </div>
-
+            <footer>
             <div className="link">
                 <a target="blank" href="https://github.com/gleydson-delcho/">
                     <img src="https://www.flaticon.com/svg/vstatic/svg/733/733609.svg?token=exp=1618409387~hmac=b41bada3574fc2d88d957e34bc231fa0" alt="GitHub" />
@@ -63,6 +63,8 @@ const Header: React.FC = () => {
                     <img src="https://www.flaticon.com/svg/vstatic/svg/2913/2913990.svg?token=exp=1618410003~hmac=f355e76c3be2d5cd982b4a10b2e911e3" alt="GitHub" />
                 </a>
             </div>
+            </footer>
+
         </div>
     );
 };
