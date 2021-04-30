@@ -1,12 +1,18 @@
+import Head from 'next/head';
 import React from 'react';
+
+import styles from '../styles/components/aboutme.module.scss';
 
 const AcademyPage: React.FC = () => {
     return (
         
-        <div className="contentContainer">            
+        <div className={styles.contentContainer}>  
+            <Head>
+                <title>Home | About me</title>
+            </Head>          
             
             <h1>Saiba mais</h1>
-            <div className="presents">       
+            <div className={styles.presents}>       
         
                 <h2>Apresentação</h2>
                 <p>
@@ -22,7 +28,7 @@ const AcademyPage: React.FC = () => {
                 </p>
             </div>
 
-            <div className="experience">
+            <div className={styles.experience}>
                 <h2>Experiências</h2>
                 <p>
                     Na área de programação para web a minha experiência está registrada no giHub que pode ser
@@ -40,7 +46,6 @@ const AcademyPage: React.FC = () => {
                 </p>
             </div>
         </div>
-        
     )
 }
 

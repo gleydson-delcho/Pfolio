@@ -1,12 +1,8 @@
 import React from 'react';
 import Head from 'next/head'
-import Header from './Header';
-import Navbar from '../components/Nav';
-import Main from './main';
-import { Container } from '../styles/components/container';
-import { HeaderContainer } from '../styles/components/header';
-import { NavbarContainer } from '../styles/components/navbar';
-import { ContentContainer } from '../styles/components/aboutMe';
+
+import styles from './home.module.scss';
+
 import { NextPage } from 'next';
 
 
@@ -16,23 +12,22 @@ import { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <>
       <Head>
         <title>Home | Gleydson Delcho</title>
       </Head>
 
-      <HeaderContainer>
-        <Header />
-      </HeaderContainer>
-
-      <ContentContainer>
-        <NavbarContainer>
-          <Navbar />
-        </NavbarContainer>
-        <Main />
-      </ContentContainer>
-    </Container>
-
+      <main className={styles.homeContainer}>
+        <h1>Olá</h1>
+        <p>
+          Meu nome é Gleydson Delcho, sou desenvolvedor web tenho me dedicado as tecnologias: ReactJS,
+          NextJS, NodeJS.
+        </p>
+        <p>
+          Sou de Brasília-DF e busco uma oportunidade de trabalhar com programação.
+        </p>
+      </main>
+    </>
   )
 }
 
