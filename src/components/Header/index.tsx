@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import imageProfile from '../../assets/profile.jpg';
 import imageGit from '../../assets/gitHub.png'
 import imageLinkedin from '../../assets/linkedin.png'
 import imageMail from '../../assets/mail.png'
 import Image from 'next/image'
+// import MyCV from '../../assets/boletoHD.pdf';
 import { FaGithub, FaReact, FaNodeJs, FaJs, FaCss3, FaHtml5 } from 'react-icons/fa';
 
 
 const Header: React.FC = () => {
+
+    const pathDownload = '../../boletoHD.pdf';
+    // const [download, setDownload] = useState('');
+
     return (
         <header className={styles.headerContainer}>
             <div className={styles.header}>
@@ -20,6 +25,12 @@ const Header: React.FC = () => {
             
             <p>Estudante de análise e desenvolvimento de sistemas na Universidade Estácio de Sá.</p>
 
+            <div className={styles.btn}>
+                <p >
+                    <a href='/curriculo.pdf' download="curriculo.pdf">Download</a>                
+                </p>
+            </div>
+            
             <div className={styles.skillContainer}>
                 <h2>Skills:</h2>
                 <div className={styles.skill}>
