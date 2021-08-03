@@ -5,15 +5,40 @@
 
     margin: 2rem;
 
+    a {
+        text-decoration: none;
+        color: #e1e1e6;
+
+        &:hover {
+            color: #1C03A8;
+            transition: 0.4s;
+        }
+    }
+
+    .navBlock {  
+        
+        button {
+            margin-left: 0.2rem;
+            cursor: pointer;
+            transition: filter 0.5s;
+
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+        
+        .blockHidden {
+            width: 6.75rem;
+            height: 5.4rem;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.2rem;
+            padding: 0.4rem 0.75rem ;
+            background: #2e2e31;
+        }
+    }
+
 }
 
-.navContainer a {        
-    text-decoration: none;
-    color: #e1e1e6;
-}
-
-.navContainer a:hover {
-    color: #1C03A8;
-    transition: 0.4s;
-}
 
