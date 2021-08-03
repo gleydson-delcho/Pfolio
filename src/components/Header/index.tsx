@@ -27,7 +27,7 @@ const Header: React.FC = () => {
 
             <div className={styles.btn}>
                 <p >
-                    <a href='/curriculo.pdf' download="curriculo.pdf">Download</a>                
+                    <a href='/curriculo.pdf' download="curriculo.pdf">Download currículo</a>                
                 </p>
             </div>
             

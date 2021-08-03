@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 
-import styles from './home.module.scss';
+import styles from '../styles/home.module.scss';
 
 import { NextPage } from 'next';
 
